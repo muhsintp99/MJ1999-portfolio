@@ -1,0 +1,20 @@
+.infinite-scroll {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+}
+
+.scroll-track {
+    display: flex;
+    gap: 1rem; /* Adjust the space between logos as desired */
+    animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(calc(-100% + 100vw));
+    }
+}
